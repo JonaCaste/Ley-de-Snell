@@ -1,0 +1,80 @@
+<!DOCTYPE HTML5 PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Simulador Optica</title>
+  <!-- <link rel="shortcut icon" type="image/png" href="res/logo.png"> -->
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- D3.js -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="menu">
+    <!-- First  -->
+    <div class="form-group">
+      <h5>Tipo de elemento:</h5>
+      <div>
+        <button id="btn-elemento-aire" type="button" class="btn btn-outline-primary btn-sm">Aire</button>
+        <button id="btn-elemento-cubo" type="button" class="btn btn-outline-secondary btn-sm">Cubo</button>
+        <button id="btn-elemento-triangulo" type="button" class="btn btn-outline-secondary btn-sm">Triangulo</button>
+      </div>
+    </div>
+
+
+    <!-- Second  -->
+    <div class="form-group">
+      <h5>Tipo de medio:</h5>
+      <div>
+        <button id="label-medio" type="button" class="btn btn btn-outline-secondary btn-sm dropdown-toggle"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Medio
+        </button>
+        <ul class="dropdown-menu">
+          <li data-value="s1"><a class="dropdown-item">Vacío</a></li>
+          <li data-value="s2"><a class="dropdown-item">Aire</a></li>
+          <li data-value="s3"><a class="dropdown-item">Agua</a></li>
+          <li data-value="s4"><a class="dropdown-item">Etanol</a></li>
+          <li data-value="s5"><a class="dropdown-item">Glicerol</a></li>
+          <li data-value="s6"><a class="dropdown-item">Vidrio acrílico</a></li>
+          <li data-value="s7"><a class="dropdown-item">Vidrio borosilicato</a></li>
+          <li data-value="s8"><a class="dropdown-item">Poliestireno</a></li>
+          <li data-value="s9"><a class="dropdown-item">Diamante</a></li>
+          <li data-value="s10"><a class="dropdown-item">Silicona</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <h5>Animación:</h5>
+      <div >
+        <button class="btn btn btn-outline-secondary" title="pause" id="pause"><i class="bi bi-pause-fill"></i></button>
+        <button class="btn btn btn-outline-secondary" title="play" id="play"><i class="bi bi-play-fill"></i></button>
+        <button class="btn btn btn-outline-secondary" title="stop" id="stop"><i class="bi bi-stop-fill"></i></button>
+      </div>
+    </div>
+    
+  </div>
+  <div class="display">
+    <span id="theta_1" style="color: green;">&#x03B8;&#x2081; &#x2248; 0°</span><br />
+    <span id="theta_1_2" style="color: orange;">&#x03B8;&#x2081;' &#x2248; 0°</span><br />
+    <span id="theta_2" style="color: blue;">&#x03B8;&#x2082; &#x2248; 0°</span><br />
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

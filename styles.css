@@ -1,0 +1,62 @@
+html, body{
+  background-color: #ffffff;
+  height: 100%
+}
+
+.menu {
+	position: fixed;
+	width: 250px; 
+	height: 240px;
+	top:30px; 
+	right: 10px;
+
+	padding: 10px;
+
+	/* From https://css.glass */
+	background: rgba(200, 200, 200, 0.18);
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(5px);
+	
+	
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+  cursor: pointer;
+}
+
+.display {
+  	position:fixed;
+	width: 120px; 
+	height: 105px;
+	top:10px; 
+	left: 20px;
+
+	padding: 10px;
+	
+
+	
+	/* From https://css.glass */
+	background: rgba(200, 200, 200, 0.18);
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+}
+.display span{
+	font-size: 18px;
+}
+
+#dragPoint{
+  cursor: pointer;
+}
+
+.form-group{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
